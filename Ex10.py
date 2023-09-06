@@ -1,7 +1,10 @@
-numero = int(input("digite uma centena"))
+n = int(input("Informe um número inteiro de 3 dígitos: "))
 
-centena = numero // 100
-dezena =  numero % 100
-unidade = numero / 10
+c = n // 100
+resto =  n % 100
+d = resto // 10
+u = resto % 10
 
-print(f"{unidade,dezena,centena}")
+n = u * 100 + d * 10 + c
+
+print(f"{n}")
